@@ -1,0 +1,47 @@
+{
+  "name": "vue2.0-router2.0-webpack",
+  "version": "1.1.0",
+  "description": "A base vue project with webpack",
+  "main": "index.js",
+  "scripts": {
+    "init": "webpack --progress --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --inline --hot --compress --history-api-fallback --config webpack.dev.config.js",
+    "build": "webpack --progress --hide-modules --config webpack.prod.config.js"
+  },
+  "author": "chong",
+  "dependencies": {
+    "vue": "^2.0.1",
+    "vue-router": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.0.0",
+    "babel": "^6.3.13",
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-runtime": "^5.8.34",
+    "clean-webpack-plugin": "^0.1.13",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.3.0",
+    "html-webpack-plugin": "^2.22.0",
+    "lazy-load-img": "^3.0.3",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^2.0.6",
+    "vue-html-loader": "^1.2.0",
+    "vue-lazy-load-img": "^0.0.2",
+    "vue-loader": "^7.2.0",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "1.13.3",
+    "webpack-dev-server": "1.16.2",
+    "vuex": "3.0.1",
+    "axios": "0.17.1"
+  }
+}

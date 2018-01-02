@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+input,
+textarea,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    -webkit-tap-highlight-color: transparent;
+}
+/* 正常链接 未访问 */
+a {
+    color: #666666;
+    outline: none;
+}
+/* 去掉列表前的标识, li 会继承 */
+ol,
+ul {
+    list-style: none;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="email"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+html {
+    color: #666666;
+    background: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* chrome默认黄色框问题修复 */
+input:focus,
+textarea:focus {
+    outline: none;
+}
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* 默认不显示下划线，保持页面简洁 */
+ins,
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+/* 清理浮动 */
+.fn-clear:before,
+.fn-clear:after,
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.fn-clear:after,
+.clearfix:after {
+    clear: both;
+}
+.fn-clear,
+.clearfix {
+    zoom: 1;
+    /* for IE6 IE7 */
+}
+/*使用 rem 代替 px */
+html{
+    font-size: 62.5%;
+}
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+    display: none!important;
+}
+/* 设置内联, 减少浮动带来的bug */
+.fn-left,
+.fn-right {
+    display: inline;
+}
+.fn-left {
+    float: left;
+}
+.fn-right {
+    float: right;
+}
+/* 单行文字溢出时出现省略号，需设定宽度 */
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 人民币符号 */
+.fn-rmb {
+    font-family: arial;
+    font-style: normal;
+    padding-right: 4px;
+}
+/* chrome 下字体过小的问题 */
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+/*悬浮后不能滚动*/
+.fn-unscroll {
+    height: 100%;
+    overflow: hidden !important;
+}
+/* 加粗 */
+.fn-bold {
+    font-weight: 700;
+}
+/* 间距 */
+.mt5 {
+    margin-top: 5px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mb5 {
+    margin-bottom: 5px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.ml15 {
+    margin-left: 15px;
+}
+/*转大写*/
+.fn-upper {
+    text-transform: uppercase;
+}
+/* 字体样式 georgia */
+.fn-georgia {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.fn-arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fn-verdana {
+    font-family: Verdana, Geneva, sans-serif;
+}
+/* 字体大小 */
+.fz12 {
+    font-size: 1.2rem;
+}
+.fz14 {
+    font-size: 1.4rem;
+}
+.fz16 {
+    font-size: 1.6rem;
+}
+/*字体颜色*/
+.fn-color-66 {
+    color: #666666;
+}
+.fn-color-33 {
+    color: #333333;
+}
+.fn-color-99 {
+    color: #999999;
+}
+.fn-color-c4 {
+    color: #c41230;
+}
+.fn-color-f0 {
+    color: #ff0000;
+}
+/* 100链接 */
+.alink {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+}
+/* 图片宽带自动缩放 */
+.img-auto-width {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    zoom: 1;
+}
+.loading_new {
+    width: 100%;
+    min-width: 320px;
+    min-height: 20px;
+    background-size: 50% 100%;
+}
+input.disabled-btn {
+    background-color: #BEBEBE;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-home:before {
+    content: "\e604";
+    top: 10px;
+    left: 0px;
+    position: relative;
+    z-index: 1;
+}
+/*关闭图标*/
+.icon-d2:before {
+    content: "\e601";
+    top: 10px;
+    left: 8px;
+    position: relative;
+    z-index: 1;
+}
+/*cart图标*/
+.icon-d3:before {
+    content: "\e602";
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+}
+/*列表图标*/
+.icon-d4:before {
+    content: "\e603";
+    top: 10px;
+    left: 8px;
+    position: relative;
+    z-index: 1;
+}
+.placeholder {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: 50%;
+}
+.placeholder:after {
+    content: '';
+    display: block;
+    margin-top: 133%;
+}
+.placeholder img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+dl dd input[type=password], dl dd input[type=email], dl dd input[type=text]{
+    width: 100%;
+    height: 38px;
+    border: 1px solid #d4d4d4;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+
+body{
+    min-height: 100%;
+    background: #f2f2f2;
+    font-family: FuturaStdMedium, Arial, Helvetica Neue, Helvetica, sans-seri;
+    color: #333333;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+}
+input, textarea, select, button{
+    font-family: FuturaStdMedium, Arial, Helvetica Neue, Helvetica, sans-seri;
+}

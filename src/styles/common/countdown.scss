@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.countdown {
+    i {
+        width: 5px;
+        font-style: normal;
+        display: inline-block;
+    }
+    span {
+        width: 30px;
+    }
+    .countdownNote {
+        b {
+            text-align: center;
+            width: 30px;
+            -webkit-transform: scale(0.6);
+            -moz-transform: scale(0.6);
+            transform: scale(0.6);
+            display: inline-block;
+        }
+        span {
+            font-size: 12px;
+            text-align: center;
+            color: #333;
+            display: inline-block;
+            margin: 0 2px;
+            &:nth-last-of-type(1), &:nth-last-of-type(2) {
+                text-indent: -2px;
+            }
+        }
+    }
+    .countdownTime span {
+        height: 27px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        background-color: #333333;
+        display: inline-block;
+        margin: 0 2px;
+    }
+}
